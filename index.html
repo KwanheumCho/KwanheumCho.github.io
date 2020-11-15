@@ -10,19 +10,16 @@ pagination:
     <header class="site-header">
       <h1 class="title">{{ site.title }}</h1>
       {% if site.subtitle %}<p class="subtitle">{{ site.subtitle }}</p>{% endif %}
-    	{{"test}}
     </header>
   </div>
 </div>
 
 <div class="wrapper">
 <ul class="post-list">
-	{{"hi"}
   {% for post in paginator.posts %}
   <li>
     <h2>
-      <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-    	{{post.title}}
+      <a class="post-link" href="{{ post.url | prepend: site.url }}">{{ post.title }}</a>
     </h2>
     <section class="post-excerpt" itemprop="description">
       <p>{{ post.content | strip_html | truncatewords: 50 }}</p>
