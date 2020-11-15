@@ -1,16 +1,22 @@
 ---
 layout: page
-title: "CS"
-permalink: /posts/CS/
-
-main_nav: false
+title: "Posts"
+permalink: /posts/
+order : 3
+main_nav: true
 ---
-CS 공부 전반에 대한 포스팅입니다.
+AI 공부 전반에 대한 포스팅입니다.
 ---
 
-{% for category in site.categories %}
+<!--
+{% for category in page.categories %}
   {% capture cat%}{{category|first}}{% endcapture %}
-  {% if cat==page.title %}
+  <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
+  {% for desc in site.descriptions %}
+    {% if desc.cat == cat %}
+      <p class="desc"><em>{{ desc.desc }}</em></p>
+    {% endif %}
+  {% endfor %}
   <ul class="posts-list">
   {% for post in site.categories[cat] %}
     <li>
@@ -22,12 +28,11 @@ CS 공부 전반에 대한 포스팅입니다.
   {% endfor %}
   </ul>
   {% if forloop.last == false %}<hr>{% endif %}
-  {% endif %}
 {% endfor %}
 <br>
+-->
 
 
-<!--
 {% for category in site.categories %}
   <ul class="categories">
     {% for categoryName in category[0] %}
@@ -41,4 +46,4 @@ CS 공부 전반에 대한 포스팅입니다.
     {% endfor %}
 </ul>
 {% endfor %}
--->
+

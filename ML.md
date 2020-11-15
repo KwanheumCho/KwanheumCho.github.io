@@ -1,11 +1,11 @@
 ---
 layout: page
-title: "CS"
-permalink: /posts/CS/
+title: "ML"
+permalink: /posts/ML/
 
 main_nav: false
 ---
-CS 공부 전반에 대한 포스팅입니다.
+ML 공부 전반에 대한 포스팅입니다.
 ---
 
 {% for category in site.categories %}
