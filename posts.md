@@ -2,15 +2,11 @@
 layout: page
 title: "Posts"
 permalink: /posts/
-order : 3
 main_nav: true
 ---
-AI 공부 전반에 대한 포스팅입니다.
----
 
-<!--
-{% for category in page.categories %}
-  {% capture cat%}{{category|first}}{% endcapture %}
+{% for category in site.categories %}
+  {% capture cat %}{{ category | first }}{% endcapture %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
@@ -30,20 +26,3 @@ AI 공부 전반에 대한 포스팅입니다.
   {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
 <br>
--->
-
-
-{% for category in site.categories %}
-  <ul class="categories">
-    {% for categoryName in category[0] %}
-      <li>
-      	<span><a href="/posts/{{categoryName}}">
-	{{ categoryName }}
-	</a></span>
-	<span class="count">{{category[1].size}}</span>
-	
-	</li>
-    {% endfor %}
-</ul>
-{% endfor %}
-
