@@ -2,12 +2,13 @@
 layout: page
 title: "AI"
 permalink: /AI/
+categories : AI
 main_nav: true
 ---
 AI 공부 전반에 대한 포스팅입니다.
 ---
-{% for category in site.categories %}
-  {% capture cat %}{{ category | first }}{% endcapture %}
+{% for category in page.categories %}
+  {% capture cat%}{{category|first}}{% endcapture %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
   {% for desc in site.descriptions %}
     {% if desc.cat == cat %}
