@@ -55,19 +55,10 @@ jekyll-archives:
 # Category descriptions (for archive pages)
 descriptions:
         
-        #- cat: jekyll
-        #desc: "Posts describing Jekyll setup techniques."
-
-        #- cat: dummy
-        #desc: "Just some placeholder posts, lorem ipsum and the rest."
-  
-        #- cat: cs
-        #desc: "Posts about computer science knowledge"
-
-        #- cat: ai
-        #desc: "Posts about AI ( ML or DL ) "
+        - cat: AI
+          desc: "Posts about AI ( ML or DL ) "
         
-        #-cat: ML
+        - cat: ML
 
 # Social icons and sharing options
 #
