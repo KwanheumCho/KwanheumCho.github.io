@@ -1,11 +1,12 @@
 ---
 layout: page
-title: "AI"
-permalink: /AI/
+title: "CS"
+permalink: /CS/
 main_nav: true
 ---
-AI 공부 전반에 대한 포스팅입니다.
+CS 공부에 대한 포스팅입니다.
 ---
+<!--
 {% for category in site.categories %}
   {% capture cat %}{{ category | first }}{% endcapture %}
   <h2 id="{{cat}}">{{ cat | capitalize }}</h2>
@@ -27,3 +28,5 @@ AI 공부 전반에 대한 포스팅입니다.
   {% if forloop.last == false %}<hr>{% endif %}
 {% endfor %}
 <br>
+-->
+test category
