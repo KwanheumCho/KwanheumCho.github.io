@@ -6,31 +6,16 @@
 </description>
     <link>https://kwanheumcho.github.io/</link>
     <atom:link href="https://kwanheumcho.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2020 09:35:42 +0000</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2020 09:35:42 +0000</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2020 09:43:42 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2020 09:43:42 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
-        <title>blog의 시작</title>
-        <description>&lt;p&gt;#Start!
-2020.111.16 블로그의 첫 시작이다.&lt;/p&gt;
-
-&lt;hr /&gt;
-</description>
-        <pubDate>Mon, 16 Nov 2020 03:00:00 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/2020/11/16/lastcheck.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/2020/11/16/lastcheck.html</guid>
-        
-        
-      </item>
-    
-      <item>
-        <title>Test Post</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/ai/2020/11/14/test6.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test6.html</guid>
+        <title>TensorFlow Tutorial3 - 케라스와 텐서플로 허브를 사용한 영화 리뷰텍스트 분류하기</title>
+        <description>&lt;p&gt; https://www.tensorflow.org/tutorials/keras/text_classification_with_hub를 참조했습니다.&lt;/p&gt; &lt;hr /&gt; &lt;h1&gt; Transfer Learning(전이학습)이란? &lt;/h1&gt; &lt;p&gt;전이학습이란 풍부한 학습데이터를 바탕으로 이미 훈련된 모델(pre-trained model)을 활용하는 것을 의미합니다.&lt;/p&gt; &lt;p&gt;만약 우리가 검증하고자 하는 데이터와 유사한 특징을 가진 데이터로 훈련된...</description>
+        <pubDate>Fri, 13 Nov 2020 05:55:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/13/tensorflow_tutorial3.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/13/tensorflow_tutorial3.html</guid>
         
         
         <category>AI</category>
@@ -38,80 +23,14 @@
       </item>
     
       <item>
-        <title>Test Post</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/ai/2020/11/14/test5.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test5.html</guid>
+        <title>TensorFlow Tutorial1 - 텐서플로를 이용한 기본 분류</title>
+        <description>&lt;p&gt; https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/keras/basic_classification.ipynb를 참조했습니다.&lt;/p&gt; &lt;hr /&gt; &lt;h1&gt; 뉴럴넷의 시작 : 분류 &lt;/h1&gt; &lt;p&gt; keras에서 제공하는 fashion_mnist 데이터를 이용해 텐서플로를 경험해볼 것입니다.&lt;/p&gt; &lt;hr /&gt; &lt;h2&gt; Data set &lt;/h2&gt; &lt;p&gt; Fashion Mnist dataset은...</description>
+        <pubDate>Wed, 11 Nov 2020 05:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html</guid>
         
         
         <category>AI</category>
-        
-      </item>
-    
-      <item>
-        <title>Test Post</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/ai/2020/11/14/test4.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test4.html</guid>
-        
-        
-        <category>AI</category>
-        
-      </item>
-    
-      <item>
-        <title>Test Post3</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/ml/2020/11/14/test3.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/ml/2020/11/14/test3.html</guid>
-        
-        
-        <category>ML</category>
-        
-      </item>
-    
-      <item>
-        <title>Test Post2</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/cs/2020/11/14/test2.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/cs/2020/11/14/test2.html</guid>
-        
-        
-        <category>CS</category>
-        
-      </item>
-    
-      <item>
-        <title>Test Post</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/ai/2020/11/14/test.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test.html</guid>
-        
-        
-        <category>AI</category>
-        
-      </item>
-    
-      <item>
-        <title>Test Post2</title>
-        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
-</description>
-        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/cs/2020/11/14/check.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/cs/2020/11/14/check.html</guid>
-        
-        
-        <category>CS</category>
         
       </item>
     
