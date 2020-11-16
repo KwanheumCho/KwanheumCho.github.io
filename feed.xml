@@ -4,19 +4,19 @@
     <title>조관흠의 블로그</title>
     <description>Coding, Research, and Life
 </description>
-    <link>http://localhost:4000/</link>
-    <atom:link href="http://localhost:4000/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2020 13:32:22 +0900</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2020 13:32:22 +0900</lastBuildDate>
+    <link>https://kwanheumcho.github.io/</link>
+    <atom:link href="https://kwanheumcho.github.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Mon, 16 Nov 2020 05:34:51 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2020 05:34:51 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
         <title>Test Post</title>
         <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/ai/2020/11/15/test6.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ai/2020/11/15/test6.html</guid>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/14/test6.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test6.html</guid>
         
         
         <category>AI</category>
@@ -27,9 +27,9 @@
         <title>Test Post</title>
         <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/ai/2020/11/15/test5.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ai/2020/11/15/test5.html</guid>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/14/test5.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test5.html</guid>
         
         
         <category>AI</category>
@@ -40,9 +40,9 @@
         <title>Test Post</title>
         <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/ai/2020/11/15/test4.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ai/2020/11/15/test4.html</guid>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/14/test4.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test4.html</guid>
         
         
         <category>AI</category>
@@ -53,9 +53,9 @@
         <title>Test Post3</title>
         <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/ml/2020/11/15/test3.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ml/2020/11/15/test3.html</guid>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ml/2020/11/14/test3.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ml/2020/11/14/test3.html</guid>
         
         
         <category>ML</category>
@@ -66,9 +66,9 @@
         <title>Test Post2</title>
         <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/cs/2020/11/15/test2.html</link>
-        <guid isPermaLink="true">http://localhost:4000/cs/2020/11/15/test2.html</guid>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/cs/2020/11/14/test2.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/cs/2020/11/14/test2.html</guid>
         
         
         <category>CS</category>
@@ -79,12 +79,25 @@
         <title>Test Post</title>
         <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
 </description>
-        <pubDate>Sun, 15 Nov 2020 04:25:52 +0900</pubDate>
-        <link>http://localhost:4000/ai/2020/11/15/test.html</link>
-        <guid isPermaLink="true">http://localhost:4000/ai/2020/11/15/test.html</guid>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/14/test.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/14/test.html</guid>
         
         
         <category>AI</category>
+        
+      </item>
+    
+      <item>
+        <title>Test Post2</title>
+        <description>&lt;p&gt;카테고리 생성 테스트&lt;/p&gt;
+</description>
+        <pubDate>Sat, 14 Nov 2020 19:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/cs/2020/11/14/check.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/cs/2020/11/14/check.html</guid>
+        
+        
+        <category>CS</category>
         
       </item>
     
