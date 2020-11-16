@@ -6,9 +6,23 @@
 </description>
     <link>https://kwanheumcho.github.io/</link>
     <atom:link href="https://kwanheumcho.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2020 05:46:33 +0000</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2020 05:46:33 +0000</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2020 05:57:06 +0000</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2020 05:57:06 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>blog의 시작</title>
+        <description>&lt;p&gt;#Start!
+2020.111.16 블로그의 첫 시작이다.&lt;/p&gt;
+
+&lt;hr /&gt;
+</description>
+        <pubDate>Mon, 16 Nov 2020 03:00:00 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/2020/11/16/lastcheck.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/2020/11/16/lastcheck.html</guid>
+        
+        
+      </item>
     
       <item>
         <title>Test Post</title>
@@ -98,19 +112,6 @@
         
         
         <category>CS</category>
-        
-      </item>
-    
-      <item>
-        <title>Projects</title>
-        <description>&lt;p&gt;테스트&lt;/p&gt;
-</description>
-        <pubDate>Thu, 14 Nov 2019 19:25:52 +0000</pubDate>
-        <link>https://kwanheumcho.github.io/ai/2019/11/14/check2.html</link>
-        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2019/11/14/check2.html</guid>
-        
-        
-        <category>AI</category>
         
       </item>
     

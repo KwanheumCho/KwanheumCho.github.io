@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://kwanheumcho.github.io/ai/2019/11/14/check2.html</loc>
-<lastmod>2019-11-14T19:25:52+00:00</lastmod>
-</url>
-<url>
 <loc>https://kwanheumcho.github.io/cs/2020/11/14/check.html</loc>
 <lastmod>2020-11-14T19:25:52+00:00</lastmod>
 </url>
@@ -33,6 +29,10 @@
 <lastmod>2020-11-14T19:25:52+00:00</lastmod>
 </url>
 <url>
+<loc>https://kwanheumcho.github.io/2020/11/16/lastcheck.html</loc>
+<lastmod>2020-11-16T03:00:00+00:00</lastmod>
+</url>
+<url>
 <loc>https://kwanheumcho.github.io/posts/AI/</loc>
 </url>
 <url>
@@ -51,10 +51,10 @@
 <loc>https://kwanheumcho.github.io/posts/</loc>
 </url>
 <url>
-<loc>https://kwanheumcho.github.io/category/ai/</loc>
+<loc>https://kwanheumcho.github.io/category/cs/</loc>
 </url>
 <url>
-<loc>https://kwanheumcho.github.io/category/cs/</loc>
+<loc>https://kwanheumcho.github.io/category/ai/</loc>
 </url>
 <url>
 <loc>https://kwanheumcho.github.io/category/ml/</loc>
