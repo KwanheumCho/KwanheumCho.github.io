@@ -1,40 +1,32 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html</loc>
-<lastmod>2020-11-15T05:25:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</loc>
-<lastmod>2020-11-16T05:25:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/ai/2020/11/17/tensorflow_tutorial2.html</loc>
-<lastmod>2020-11-17T05:25:52+00:00</lastmod>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/aboutme/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/typography/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/posts/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/category/ai/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/posts/AI/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/posts/CS/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/posts/ML/</loc>
-</url>
-<url>
-<loc>https://kwanheumcho.github.io/google08b99b06089dc854.html</loc>
-<lastmod>2020-11-17T09:13:01+00:00</lastmod>
-</url>
-</urlset>
+ ---
+    layout: null
+    sitemap:
+      exclude: 'yes'
+    ---
+    <?xml version="1.0" encoding="UTF-8"?>
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      {% for post in site.posts %}
+        {% unless post.published == false %}
+        <url>
+          <loc>{{ site.url }}{{ post.url }}</loc>
+          {% if post.sitemap.lastmod %}
+            <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+          {% elsif post.date %}
+            <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+          {% else %}
+            <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+          {% endif %}
+          {% if post.sitemap.changefreq %}
+            <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+          {% else %}
+            <changefreq>monthly</changefreq>
+          {% endif %}
+          {% if post.sitemap.priority %}
+            <priority>{{ post.sitemap.priority }}</priority>
+          {% else %}
+            <priority>0.5</priority>
+          {% endif %}
+        </url>
+        {% endunless %}
+      {% endfor %}
+    </urlset>
