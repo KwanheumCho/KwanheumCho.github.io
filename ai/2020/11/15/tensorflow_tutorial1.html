@@ -42,7 +42,7 @@
   
   <!-- Facebook OGP cards -->
   <meta property="og:description" content="원본 출처 : https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/keras/basic_classification.ipynb" />
-  <meta property="og:url" content="https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html">
+  <meta property="og:url" content="https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html">
   <meta property="og:site_name" content="조관흠의 블로그" />
   <meta property="og:title" content="TensorFlow Tutorial1 - Keras를 이용한 기본 분류" />
   <meta property="og:type" content="website" />
@@ -58,14 +58,14 @@
   <meta name="twitter:title" content="TensorFlow Tutorial1 - Keras를 이용한 기본 분류">
   <meta name="twitter:description" content="원본 출처 : https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/keras/basic_classification.ipynb">
   <meta name="twitter:image" content="https://kwanheumcho.github.io/assets/logo.png">
-  <meta name="twitter:url" content="https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html">
+  <meta name="twitter:url" content="https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html">
+  <link rel="canonical" href="https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html">
 	<link rel="alternate" type="application/rss+xml" title="조관흠의 블로그" href="https://kwanheumcho.github.io/feed.xml" />
 	
 	<!-- Tooltips -->
@@ -147,7 +147,7 @@
  
 
 <section class="post-meta">
-  <div class="post-date">November 11, 2020</div>
+  <div class="post-date">November 15, 2020</div>
   <div class="post-categories">
   in 
     
@@ -169,7 +169,7 @@
 <br /></p>
 
 <h3 id="data">Data</h3>
-<p>Fashion Mnist dataset은 10가지 종류의 70000개의 흑백이미지를 제공합니다. 이미지는 흑백이미지이기 때문에 하나의 채널을 가지며 28X28의 numpy array의 형태로 각 픽셀의 값은 0~255입니다(RGB). 그리고 각각 이미지의 종류는 다음과 같습니다. <img src="/assets/tutorial1_img/ss2.png" alt="screensh2" />
+<p>Fashion Mnist dataset은 10가지 종류의 70000개의 흑백이미지를 제공합니다. 이미지는 흑백이미지이기 때문에 하나의 채널을 가지며 28X28의 numpy array의 형태로 각 픽셀의 값은 0~255입니다(RGB). 그리고 각각 이미지의 종류는 다음과 같습니다. <img src="/assets/tutorial1_img/ss2.png" alt="screensh2" width="250" height="400" />
 60000개의 이미지가 훈련데이터이고, 10000개의 이미지가 실험데이터입니다.</p>
 
 <p>각 픽셀의 값은 0~1의 값을 가지도록 normalization 해줄 필요가 있습니다.
@@ -222,7 +222,7 @@ predictions[5]는 6번째 이미지의 예측 결과 값으로, 길이가 10인 
   
     
     
-      <a href="//twitter.com/share?text=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F11%2Ftensorflow_tutorial1.html&via="
+      <a href="//twitter.com/share?text=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F15%2Ftensorflow_tutorial1.html&via="
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
         <i class="fa fa-twitter-square fa-lg"></i>
       </a>
@@ -237,7 +237,7 @@ predictions[5]는 6번째 이미지의 예측 결과 값으로, 길이가 10인 
     
     
     
-      <a href="//www.facebook.com/sharer.php?t=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&u=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F11%2Ftensorflow_tutorial1.html"
+      <a href="//www.facebook.com/sharer.php?t=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&u=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F15%2Ftensorflow_tutorial1.html"
         onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
         <i class="fa fa-facebook-square fa-lg"></i>
       </a>
@@ -262,7 +262,7 @@ predictions[5]는 6번째 이미지의 예측 결과 값으로, 길이가 10인 
     
     
     
-      <a href="//www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F11%2Ftensorflow_tutorial1.html"
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F15%2Ftensorflow_tutorial1.html"
         onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
         <i class="fa fa-linkedin-square fa-lg"></i>
       </a>
@@ -275,7 +275,7 @@ predictions[5]는 6번째 이미지의 예측 결과 값으로, 길이가 10인 
     
     
     
-      <a href="//plus.google.com/share?title=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F11%2Ftensorflow_tutorial1.html"
+      <a href="//plus.google.com/share?title=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F15%2Ftensorflow_tutorial1.html"
         onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
         <i class="fa fa-google-plus-square fa-lg"></i>
       </a>
@@ -309,7 +309,7 @@ predictions[5]는 6번째 이미지의 예측 결과 값으로, 길이가 10인 
     
     
     
-      <a href="//www.pinterest.com/pin/create/button/?description=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F11%2Ftensorflow_tutorial1.html&media=https://kwanheumcho.github.io/assets/lake_image.jpg"
+      <a href="//www.pinterest.com/pin/create/button/?description=TensorFlow+Tutorial1+-+Keras%EB%A5%BC+%EC%9D%B4%EC%9A%A9%ED%95%9C+%EA%B8%B0%EB%B3%B8+%EB%B6%84%EB%A5%98&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F15%2Ftensorflow_tutorial1.html&media=https://kwanheumcho.github.io/assets/lake_image.jpg"
         onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
         <i class="fa fa-pinterest-square fa-lg"></i>
       </a>
@@ -378,7 +378,7 @@ predictions[5]는 6번째 이미지의 예측 결과 값으로, 길이가 10인 
     
     
     
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html') + '&title=TensorFlow Tutorial1 - Keras를 이용한 기본 분류'; return false">
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html') + '&title=TensorFlow Tutorial1 - Keras를 이용한 기본 분류'; return false">
         <i class="fa fa-reddit-square fa-lg"></i>
       </a>
     
