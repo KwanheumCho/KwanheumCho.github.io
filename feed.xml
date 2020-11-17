@@ -6,9 +6,21 @@
 </description>
     <link>https://kwanheumcho.github.io/</link>
     <atom:link href="https://kwanheumcho.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2020 11:48:58 +0000</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2020 11:48:58 +0000</lastBuildDate>
+    <pubDate>Tue, 17 Nov 2020 05:22:07 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2020 05:22:07 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
+    
+      <item>
+        <title>기본 개념 : Embedding이란</title>
+        <description>&lt;hr /&gt; &lt;h1 id=&quot;embedding이란&quot;&gt;Embedding이란&lt;/h1&gt; &lt;p&gt;Embedding을 간단하게 설명하면 텍스트 데이터를 컴퓨터가 이해할 수 있도록 수치화 해주는 것이라고 할 수 있다.&lt;br /&gt; 가장 기본적인 방법은 One-hot encoding이다. 예를 들어 ‘사과, 바나나, 토마토’라는...</description>
+        <pubDate>Mon, 16 Nov 2020 05:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</guid>
+        
+        
+        <category>AI</category>
+        
+      </item>
     
       <item>
         <title>TensorFlow Tutorial3 - 케라스와 텐서플로 허브를 사용한 영화 리뷰텍스트 분류하기</title>
@@ -23,7 +35,7 @@
       </item>
     
       <item>
-        <title>TensorFlow Tutorial1 - 텐서플로를 이용한 기본 분류</title>
+        <title>TensorFlow Tutorial1 - Keras를 이용한 기본 분류</title>
         <description>&lt;p&gt;원본 출처 : https://github.com/tensorflow/docs/blob/master/site/en/r1/tutorials/keras/basic_classification.ipynb&lt;/p&gt; &lt;hr /&gt; &lt;h1 id=&quot;뉴럴넷의-시작--분류&quot;&gt;뉴럴넷의 시작 : 분류&lt;/h1&gt; &lt;p&gt;keras에서 제공하는 fashion_mnist 데이터를 이용해 텐서플로를 경험해볼 것입니다. 필요한 라이브러리들을 세팅했습니다. 제 텐서플로우 버전은 1.15.0입니다. &lt;img src=&quot;/assets/tutorial1_img/ss1.png&quot; alt=&quot;screensh&quot; /&gt;...</description>
         <pubDate>Wed, 11 Nov 2020 05:25:52 +0000</pubDate>
         <link>https://kwanheumcho.github.io/ai/2020/11/11/tensorflow_tutorial1.html</link>
