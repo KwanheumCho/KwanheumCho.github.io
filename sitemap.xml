@@ -1,49 +1,49 @@
-    <?xml version="1.0" encoding="UTF-8"?>
-    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-      
-        
-        <url>
-          <loc>https://kwanheumcho.github.io/ai/2020/11/17/tensorflow_tutorial2.html</loc>
-          
-            <lastmod>2020-11-17T05:25:52+00:00</lastmod>
-          
-          
-            <changefreq>monthly</changefreq>
-          
-          
-            <priority>0.5</priority>
-          
-        </url>
-        
-      
-        
-        <url>
-          <loc>https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</loc>
-          
-            <lastmod>2020-11-16T05:25:52+00:00</lastmod>
-          
-          
-            <changefreq>monthly</changefreq>
-          
-          
-            <priority>0.5</priority>
-          
-        </url>
-        
-      
-        
-        <url>
-          <loc>https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html</loc>
-          
-            <lastmod>2020-11-15T05:25:52+00:00</lastmod>
-          
-          
-            <changefreq>monthly</changefreq>
-          
-          
-            <priority>0.5</priority>
-          
-        </url>
-        
-      
-    </urlset>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+<url>
+  <loc>https://kwanheumcho.github.io/ai/2020/11/17/tensorflow_tutorial2.html</loc>
+  
+    <lastmod>2020-11-17T05:25:52+00:00</lastmod>
+  
+  
+    <changefreq>monthly</changefreq>
+  
+  
+    <priority>0.5</priority>
+  
+</url>
+
+
+
+<url>
+  <loc>https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</loc>
+  
+    <lastmod>2020-11-16T05:25:52+00:00</lastmod>
+  
+  
+    <changefreq>monthly</changefreq>
+  
+  
+    <priority>0.5</priority>
+  
+</url>
+
+
+
+<url>
+  <loc>https://kwanheumcho.github.io/ai/2020/11/15/tensorflow_tutorial1.html</loc>
+  
+    <lastmod>2020-11-15T05:25:52+00:00</lastmod>
+  
+  
+    <changefreq>monthly</changefreq>
+  
+  
+    <priority>0.5</priority>
+  
+</url>
+
+
+</urlset>
