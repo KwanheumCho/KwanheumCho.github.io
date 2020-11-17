@@ -6,8 +6,8 @@
 </description>
     <link>https://kwanheumcho.github.io/</link>
     <atom:link href="https://kwanheumcho.github.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Tue, 17 Nov 2020 11:46:57 +0000</pubDate>
-    <lastBuildDate>Tue, 17 Nov 2020 11:46:57 +0000</lastBuildDate>
+    <pubDate>Tue, 17 Nov 2020 12:41:04 +0000</pubDate>
+    <lastBuildDate>Tue, 17 Nov 2020 12:41:04 +0000</lastBuildDate>
     <generator>Jekyll v3.9.0</generator>
     
       <item>
@@ -28,6 +28,18 @@
         <pubDate>Mon, 16 Nov 2020 05:25:52 +0000</pubDate>
         <link>https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</link>
         <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/16/embedding.html</guid>
+        
+        
+        <category>AI</category>
+        
+      </item>
+    
+      <item>
+        <title>기본 개념 : Embedding이란</title>
+        <description>&lt;hr /&gt; &lt;h1 id=&quot;embedding이란&quot;&gt;Embedding이란&lt;/h1&gt; &lt;p&gt;Embedding을 간단하게 설명하면 텍스트 데이터를 컴퓨터가 이해할 수 있도록 수치화 해주는 것이라고 할 수 있다.&lt;br /&gt; 가장 기본적인 방법은 One-hot encoding이다. 예를 들어 ‘사과, 바나나, 토마토’라는...</description>
+        <pubDate>Mon, 16 Nov 2020 05:25:52 +0000</pubDate>
+        <link>https://kwanheumcho.github.io/ai/2020/11/16/AboutTensorflow.html</link>
+        <guid isPermaLink="true">https://kwanheumcho.github.io/ai/2020/11/16/AboutTensorflow.html</guid>
         
         
         <category>AI</category>
