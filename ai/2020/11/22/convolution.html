@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>기본 개념 : Embedding이란</title>
-  <meta name="description" content="">
+  <title>[Tensorflow] 기본적인 CNN의 적용</title>
+  <meta name="description" content="coursera 강의 ‘Convolutional Neural Networks in TensorFlow’ by Laurence Moroney 를 수강한 후 자체 환경에서 수정, 적용한 내용입니다.">
   
   <meta name="author" content="Kwanheum Cho">
   <meta name="copyright" content="&copy; Kwanheum Cho 2020">
@@ -41,10 +41,10 @@
 
   
   <!-- Facebook OGP cards -->
-  <meta property="og:description" content="" />
-  <meta property="og:url" content="https://kwanheumcho.github.io/ai/2020/11/16/AboutTensorflow.html">
+  <meta property="og:description" content="coursera 강의 ‘Convolutional Neural Networks in TensorFlow’ by Laurence Moroney 를 수강한 후 자체 환경에서 수정, 적용한 내용입니다." />
+  <meta property="og:url" content="https://kwanheumcho.github.io/ai/2020/11/22/convolution.html">
   <meta property="og:site_name" content="조관흠의 블로그" />
-  <meta property="og:title" content="기본 개념 : Embedding이란" />
+  <meta property="og:title" content="[Tensorflow] 기본적인 CNN의 적용" />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="https://kwanheumcho.github.io/assets/Homelogo.png" />
   <meta property="og:image:type" content="image/png" />
@@ -55,17 +55,17 @@
   
   <!-- Twitter: card tags -->
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="기본 개념 : Embedding이란">
-  <meta name="twitter:description" content="">
+  <meta name="twitter:title" content="[Tensorflow] 기본적인 CNN의 적용">
+  <meta name="twitter:description" content="coursera 강의 ‘Convolutional Neural Networks in TensorFlow’ by Laurence Moroney 를 수강한 후 자체 환경에서 수정, 적용한 내용입니다.">
   <meta name="twitter:image" content="https://kwanheumcho.github.io/assets/logo.png">
-  <meta name="twitter:url" content="https://kwanheumcho.github.io/ai/2020/11/16/AboutTensorflow.html">
+  <meta name="twitter:url" content="https://kwanheumcho.github.io/ai/2020/11/22/convolution.html">
   
 
   
 
   <!-- Site styles -->
   <link rel="stylesheet" href="/css/main.css">
-  <link rel="canonical" href="https://kwanheumcho.github.io/ai/2020/11/16/AboutTensorflow.html">
+  <link rel="canonical" href="https://kwanheumcho.github.io/ai/2020/11/22/convolution.html">
 	<link rel="alternate" type="application/rss+xml" title="조관흠의 블로그" href="https://kwanheumcho.github.io/feed.xml" />
 	
 	<!-- Tooltips -->
@@ -130,7 +130,7 @@
 <div class="post-header-container " >
   <div class="scrim ">
     <header class="post-header">
-      <h1 class="title">기본 개념 : Embedding이란</h1>
+      <h1 class="title">[Tensorflow] 기본적인 CNN의 적용</h1>
       <p class="info">by <strong>Cho Kwanheum</strong></p>
     </header>
   </div>
@@ -145,7 +145,7 @@
  
 
 <section class="post-meta">
-  <div class="post-date">November 16, 2020</div>
+  <div class="post-date">November 22, 2020</div>
   <div class="post-categories">
   in 
     
@@ -156,24 +156,52 @@
 </section>
 
 <article class="post-content">
-  <hr />
+  <p>coursera 강의 ‘Convolutional Neural Networks in TensorFlow’ by Laurence Moroney 를 수강한 후 자체 환경에서 수정, 적용한 내용입니다.</p>
 
-<h1 id="embedding이란">Embedding이란</h1>
-<p>Embedding을 간단하게 설명하면 텍스트 데이터를 컴퓨터가 이해할 수 있도록 수치화 해주는 것이라고 할 수 있다.<br />
-가장 기본적인 방법은 One-hot encoding이다. 예를 들어 ‘사과, 바나나, 토마토’라는 단어 집합이  있을 때 각각의 단어를 [1,0,0] [0,1,0] [0,0,1]로 만들어 주는 것이다. 단어의 수가 많아질수록 0이 굉장히 많이 들어가게 되고 이를 ‘희소 표현’이라고도 부른다. 간단하지만 공간이 많이 필요하기 때문에 비효율적이고, 단어간의 관계를 표현하지 못한다는 단점이 있다.<br />
-이를 해결하기 위한  방법으로 word embedding이 있다. ‘밀집 표현’의 형태로, 단어의 수에 상관없이 설정해주는 특정 차원의 벡터로 단어를 표현하는 것이다. 예를 들어2차원으로 벡터를 만든다고 한다면  사과 : [0.5, 0.3], 바나나 : [0.1, 0.2], 토마토: [0.8, 0.1] 와 같이 만드는 것이다. <br /></p>
+<hr />
 
-<h3 id="keras-embedding-layer">Keras Embedding layer</h3>
-<p>Word embedding을 하기 위한 여러 방법들(TF-IDF , Word2vec, … etc)등이 있으나 기본적으로 Keras에서 어떻게 작동하는지를 살펴보자.
-<img src="/assets/concept/embedding1.png" alt="screensh" />
-작동원리를 확인하기 위해 임의로 입력값을 만들었다.<br />
-input_array는 10개의 단어집합에서 각각 5개의 단어를 가지는 2개의 문장이라고 볼 수 있다.<br />
-Embedding layer에는 (전체 단어집합의크기 , 임베딩벡터의 차원)을 넣어줬다. <br />
-간단하게 구현한 모델에 input값을 넣고 output의 형태와 값을 보면, (2, 5, 2) = ( input_shape, 임베딩벡터의차원)의 형태를 가짐을 알 수 있고 각각의 단어들이 2차원 벡터로 표현되었음을 알 수 있다.<br />
-input의 0 -&gt; [-0.00266911 0.02828922]<br />
-input의 4 -&gt; [0.0131993 -0.01541017]<br />
-<br /><br />
-<br /></p>
+<h1 id="cnn의-적용">CNN의 적용</h1>
+<p>기본적인 CNN을 만들고, 실제 데이터를 이용하여 적용해보자.<br />
+먼저 기본적인 라이브러리들을 사용하기 위해 다음과 같이 구성해줬다.<br />
+<img src="/assets/cnn1/ss1.png" alt="sreensh" /></p>
+
+<h3 id="데이터">데이터</h3>
+<p>데이터는 Kaggle에 존재하는 개&amp;고양이 이미지를 로컬저장소 ‘Kaggle’폴더에  저장후 진행했다.<br />
+<a href="https://www.kaggle.com/chetankv/dogs-cats-images">데이터 출처</a><br /></p>
+
+<p><img src="/assets/cnn1/ss2.png" alt="sreensh2" />
+원하는 위치의 하위에 /dataset폴더가 만들어졌고 그 하위에 각각 training_set과 test_set이 존재한다. 각각 데이터의 크기는 4000개 1000개이다.
+추가적으로 각 이미지마다의 label값이 따로 주어져 있지는 않지만, 각각의 폴더에 사진이 모여있으므로 ImageGenerator를 사용하여 간편하게 데이터를 사용할 수 있다.
+<img src="/assets/cnn1/ss5.png" alt="sreensh5" />
+rescale을 이용해 픽셀값이 0~1의 값을 가지도록 범위를 조정해주고, batch_size , class_mode, target_size를 설정해준다. ImageGenerator의 장점은 상위 디렉토리의 이름대로 label을 설정해준다는 것이다.<br />
+예를 들어, cats 폴더 밑에 있는 사진들은 모두 cat 의 class로 묶는다.<br />
+위에서 보이듯이 8000개의 training image , 2000개의 test image가 2 class로 분류되었음을 볼 수 있다.</p>
+
+<h3 id="모델">모델</h3>
+<p>모델은 3개의 Convolution layer와 MaxPooling layer를 쌓고, 그 이후 Flatten과 Dense layer를 쌓아 구성했다.<br />
+optimizer는 RMSprop을 사용했고 개 or 고양이 두가지의 분류이기 때문에 loss는 binary crossentropy를 사용했다.<br />
+<img src="/assets/cnn1/ss3.png" alt="sreensh3" />
+model. summary()를 이용하여 모델의 형태를 살펴보면 전체적인 구성을 알 수 있다. <br />
+<img src="/assets/cnn1/ss4.png" alt="sreensh4" />
+(300, 300, 3)의 입력 값이 Convolution layer를 지나면 필터의 크기로 인해 (298, 298, channel=8)의 결과 값이 나오게 되고 Pooling layer를 거쳐 절반의 크기인 (149, 149, channel=8)로 변하게 됨을 알 수있다. 마찬가지의 작용이 두 번 더 일어나게 된다. <br />
+Image Generator를 사용했기 때문에 fit_generator를 사용하여 훈련을 시켜주게되면 다음과 같은 결과를 얻을 수 있다.
+<img src="/assets/cnn1/ss6.png" alt="sreensh6" />
+training acc는 계속해서 증가하나, validation_acc는 큰차이 없이 유지됨을 볼 수 있다.
+좀 더 살펴보기 위해 loss 와 accuray에 관한 그래프로 살펴보자.<br />
+<img src="/assets/cnn1/ss7.png" alt="sreensh7" />
+파란색이 Validation인데, 전체적으로 acc는 변하지 않으며 일정시점을 기준으로 loss는 오히려 증가함을 볼 수있다.<br />
+원인은 4000개라는 한정된 훈련데이터 양으로 인한 overfitting을 예상해 볼 수 있다.<br />
+해당 부분에 대한 개선사항은 추후 더 알아보겠다.</p>
+
+<hr />
+
+<p>추가 학습 필요
+Q. fit 과 fit_Generator의 차이점?<br />
+Q. Overfit을 막을 수 있는 방법?<br />
+Q. 성능을 향상 시킬 수 있는 parameter 설정 방향성?<br /></p>
+
+<hr />
+
 
 </article>
 
@@ -190,7 +218,7 @@ input의 4 -&gt; [0.0131993 -0.01541017]<br />
   
     
     
-      <a href="//twitter.com/share?text=%EA%B8%B0%EB%B3%B8+%EA%B0%9C%EB%85%90+%3A+Embedding%EC%9D%B4%EB%9E%80&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F16%2FAboutTensorflow.html&via="
+      <a href="//twitter.com/share?text=%5BTensorflow%5D+%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8+CNN%EC%9D%98+%EC%A0%81%EC%9A%A9&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F22%2Fconvolution.html&via="
         onclick="window.open(this.href, 'twitter-share', 'width=550,height=255');return false;">
         <i class="fa fa-twitter-square fa-lg"></i>
       </a>
@@ -205,7 +233,7 @@ input의 4 -&gt; [0.0131993 -0.01541017]<br />
     
     
     
-      <a href="//www.facebook.com/sharer.php?t=%EA%B8%B0%EB%B3%B8+%EA%B0%9C%EB%85%90+%3A+Embedding%EC%9D%B4%EB%9E%80&u=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F16%2FAboutTensorflow.html"
+      <a href="//www.facebook.com/sharer.php?t=%5BTensorflow%5D+%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8+CNN%EC%9D%98+%EC%A0%81%EC%9A%A9&u=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F22%2Fconvolution.html"
         onclick="window.open(this.href, 'facebook-share', 'width=550,height=255');return false;">
         <i class="fa fa-facebook-square fa-lg"></i>
       </a>
@@ -230,7 +258,7 @@ input의 4 -&gt; [0.0131993 -0.01541017]<br />
     
     
     
-      <a href="//www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F16%2FAboutTensorflow.html"
+      <a href="//www.linkedin.com/shareArticle?mini=true&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F22%2Fconvolution.html"
         onclick="window.open(this.href, 'linkedin-share', 'width=550,height=255');return false;">
         <i class="fa fa-linkedin-square fa-lg"></i>
       </a>
@@ -243,7 +271,7 @@ input의 4 -&gt; [0.0131993 -0.01541017]<br />
     
     
     
-      <a href="//plus.google.com/share?title=%EA%B8%B0%EB%B3%B8+%EA%B0%9C%EB%85%90+%3A+Embedding%EC%9D%B4%EB%9E%80&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F16%2FAboutTensorflow.html"
+      <a href="//plus.google.com/share?title=%5BTensorflow%5D+%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8+CNN%EC%9D%98+%EC%A0%81%EC%9A%A9&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F22%2Fconvolution.html"
         onclick="window.open(this.href, 'google-plus-share', 'width=550,height=255');return false;">
         <i class="fa fa-google-plus-square fa-lg"></i>
       </a>
@@ -277,7 +305,7 @@ input의 4 -&gt; [0.0131993 -0.01541017]<br />
     
     
     
-      <a href="//www.pinterest.com/pin/create/button/?description=%EA%B8%B0%EB%B3%B8+%EA%B0%9C%EB%85%90+%3A+Embedding%EC%9D%B4%EB%9E%80&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F16%2FAboutTensorflow.html&media=https://kwanheumcho.github.io/assets/lake_image.jpg"
+      <a href="//www.pinterest.com/pin/create/button/?description=%5BTensorflow%5D+%EA%B8%B0%EB%B3%B8%EC%A0%81%EC%9D%B8+CNN%EC%9D%98+%EC%A0%81%EC%9A%A9&url=https%3A%2F%2Fkwanheumcho.github.io%2Fai%2F2020%2F11%2F22%2Fconvolution.html&media=https://kwanheumcho.github.io/assets/lake_image.jpg"
         onclick="window.open(this.href, 'pinterest-share', 'width=550,height=255');return false;">
         <i class="fa fa-pinterest-square fa-lg"></i>
       </a>
@@ -346,7 +374,7 @@ input의 4 -&gt; [0.0131993 -0.01541017]<br />
     
     
     
-      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('https://kwanheumcho.github.io/ai/2020/11/16/AboutTensorflow.html') + '&title=기본 개념 : Embedding이란'; return false">
+      <a href="//www.reddit.com/submit" onclick="window.location = '//www.reddit.com/submit?url=' + encodeURIComponent('https://kwanheumcho.github.io/ai/2020/11/22/convolution.html') + '&title=[Tensorflow] 기본적인 CNN의 적용'; return false">
         <i class="fa fa-reddit-square fa-lg"></i>
       </a>
     
